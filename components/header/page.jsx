@@ -58,7 +58,7 @@ About
              onMouseEnter={handleDropdownMouseEnter}
              onMouseLeave={handleDropdownMouseLeave}
            >
-<Link href="/reactt" className="block px-4 py-2 hover:bg-gray-100 cursor-pointer">
+<Link href="/projects/reactt" className="block px-4 py-2 hover:bg-gray-100 cursor-pointer">
 React
 </Link>
 <Link href="/projects/vue" className="block px-4 py-2 hover:bg-gray-100 cursor-pointer">
