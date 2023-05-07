@@ -76,6 +76,9 @@ Other
 <Link href="/contact" className="text-gray-600 hover:text-gray-800 cursor-pointer">
 Contact
 </Link>
+<Link href="/codes" className="text-gray-600 hover:text-gray-800 cursor-pointer">
+Codes
+</Link>
 </nav>
 </div>
 </header>
