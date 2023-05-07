@@ -96,30 +96,25 @@ function Yazilar3() {
   `;
 
   const pythonCode = `
-  mesafe = int(input("Mesafeyi km türünden giriniz: "))
-  yas = int(input("Yaşınızı giriniz: "))
-  yolculukTipi = int(input("Yolculuk tipini giriniz (1 => Tek Yön, 2 => Gidiş Dönüş): "))
+  armutFiyat = 2.14
+  elmaFiyat = 3.67
+  domatesFiyat = 1.11
+  muzFiyat = 0.95
+  patlicanFiyat = 5.00
   
-  if mesafe <= 0 or yas < 0 or yolculukTipi < 1 or yolculukTipi > 2:
-      print("Hatalı Veri Girdiniz !")
-  else:
-      normalTutar = mesafe * 0.10
+  armutKilo = float(input("Armut kaç kilo? : "))
+  elmaKilo = float(input("Elma kaç kilo? : "))
+  domatesKilo = float(input("Domates kaç kilo? : "))
+  muzKilo = float(input("Muz kaç kilo? : "))
+  patlicanKilo = float(input("Patlıcan kaç kilo? : "))
   
-      indirimliTutar = normalTutar
-      if yas < 12:
-          indirimliTutar *= 0.5
-      elif yas < 24:
-          indirimliTutar *= 0.9
-      elif yas >= 65:
-          indirimliTutar *= 0.7
+  toplamTutar = (armutKilo * armutFiyat) +
+  (elmaKilo * elmaFiyat) +
+  (domatesKilo * domatesFiyat) +
+  (muzKilo * muzFiyat) +
+  (patlicanKilo * patlicanFiyat)
   
-      if yolculukTipi == 2:
-          indirimliTutar *= 0.8
-  
-      toplamTutar = indirimliTutar * yolculukTipi
-  
-      print("Toplam Tutar = {:.2f} TL".format(toplamTutar))
-  
+  print("Toplam Tutar : {:.2f} TL".format(toplamTutar))
   `;
 
   const [text, setText] = useState(initialText);
