@@ -79,6 +79,9 @@ Contact
 <Link href="/codes" className="text-gray-600 hover:text-gray-800 cursor-pointer">
 Codes
 </Link>
+<Link href="/practice" className="text-gray-600 hover:text-gray-800 cursor-pointer">
+Practice
+</Link>
 </nav>
 </div>
 </header>
